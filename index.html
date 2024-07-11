@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Javascript 50 example</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    
+<div class="container">
+    <!-- example one -->
+    <h1 class="text-dark">Ex-1:Click the button to change the text</h1>
+
+    <button onclick="textChange()" type="button" class="btn btn-dark">Click to change the text</button>
+    <h3 id="t_c">Hello</h3>
+<hr>
+    <!-- example two  -->
+     <h2 class="text-dark">Ex-2:Click the button to show the date</h2>
+     <button class="btn btn-dark" onclick="showDate()">Show the date</button>
+     <h3 id="t_d">Date and Time</h3>
+<hr>
+<!-- example three      -->
+ <h3 class="text-dark">Ex-3:Click the button to on/off the bulb</h3>
+ <button class="btn btn-dark" onclick="bulbOn()">Bulb On</button>
+ <button class="btn btn-danger" onclick="bulbOff()">Bulb Off</button>
+ <img id="b_img" src="img/lightOff.jpg" alt="" width="200px">
+
+<hr>
+<!-- example four -->
+<h2 class="text-dark">Ex-4:Click the button to change the color</h2>
+<button class="btn btn-dark" onclick="colorChange()">Text Color</button>
+<h3 id="t_color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias tenetur consequuntur atque maiores ipsa reiciendis</h3>
+
+<hr>
+<!-- example five -->
+ <h2 class="text-dark">Ex-5:Click the button to show/hide the Text</h2>
+ <button class="btn btn-dark" onclick="sText()">Show the text</button>
+ <button class="btn btn-dark" onclick="hText()">Hide the text</button>
+  <h3 id="sh_text">This is JavaScript</h3>
+
+  <hr>
+  <!-- example six -->
+   <h2 class="text-dark">Ex-6:Click the button to show the text</h2>
+   <button class="btn btn-dark" onclick="dWrite()">document.write</button>
+
+<hr>
+ <!-- example seven -->
+<h2 class="text-dark">Ex-7:Click the button to show the text</h2>
+   <button class="btn btn-dark" onclick="sAlert()">Alert</button>
+ 
+  <hr>
+  <!-- example eight -->
+   <h2 class="text-dark">Ex-8:Click the button to show the into console</h2>
+   <button class="btn btn-dark" onclick="cLog()">Console.Log</button>
+
+<hr>
+<!-- example nine -->
+ <h2 class="text-dark">Ex-9:Click the button to show the Addition result</h2>
+ <button class="btn btn-dark" onclick="rAddition()">4+5</button>
+ <h3 id="r_a">The result</h3>
+
+ <hr>
+ <!-- example ten  -->
+  <h2 class="text-dark">Ex-10:Click the button to show the Substraction result</h2>
+  <button class="btn btn-dark" onclick="rSubstraction()">5-2</button>
+  <h3 id="r_s">The result is</h3>
+
+  <hr>
+  <!-- example eleven -->
+   <h2 class="text-dark">Ex-11:Click the button to show Multiplication result</h2>
+   <button class="btn btn-dark" onclick="rMultiplication()">5*6</button>
+  <h3 id="r_m">The result is</h3>
+
+  <hr>
+  <!-- example twelve -->
+   <h2 class="text-dark">Ex-12:Click the button to show Division Result</h2>
+   <button class="btn btn-dark" onclick="rDivision()">12/6</button>
+   <h3 id="r_d">The result is</h3>
+
+   <hr>
+   <!-- example thirteen -->
+    <h2 class="text-dark">Ex-13:Click the button to show result of assignment operator</h2>
+    <button class="btn btn-dark" onclick="rAssign()">12+=24 <br>24=12+24</button>
+    <h3 id="r_ass">The result is</h3>
+
+<hr>
+<!-- example fourteen -->
+<h2 class="text-dark">Ex-14:Click the button to Print</h2>
+<button class="btn btn-dark" onclick="ePrint()">Print</button>
+<h3 id="e_p">Here Print</h3>
+
+<hr>
+<!-- example fifteen -->
+ <h2 class="text-dark">Ex-15:The result of arithmatic adding 5 + 2 + 3 is:</h2>
+ <button class="btn btn-dark" onclick="demoArith()">Result</button>
+<h3 id="d_a">Arithmatic Addition</h3>
+
+<hr>
+<!-- example sixteen -->
+ <h2 class="text-dark">Ex-16:The result of adding "Sraboni" + " " + "Barua" is:</h2>
+<button class="btn btn-dark" onclick="concat()">Concat</button>
+<h3 id="c_c">Strings will be concatenated</h3>
+
+<hr>
+<!-- example seventeen -->
+ <h2 class="text-dark">Ex-17:The result of adding Numerical Addition and String Concatenation 2 + 3 + "5" is:</h2>
+ <button class="btn btn-dark" onclick="sNum()">Result</button>
+ <h3 id="s_n">Here the result</h3>
+
+ <hr>
+ <!-- example eighteen -->
+  <h2 class="text-dark">Ex-18:The result of adding the number to a string and concatenates it with the string "6" + 1 + 9 is:</h2>
+<button  class="btn btn-dark" onclick="cString()">Result</button>
+<h3 id="c_s">Here the result</h3>
+
+<hr>
+<!-- example ninteen -->
+ <h2 class="text-dark">Ex-19:The dollar sign is treated as a letter in names.Here value of $$$ + $myMoney is: </h2>
+ <button class="btn btn-dark" onclick="sDollar()">Result</button>
+ <h3 id="s_dollar">Here the result</h3>
+
+ <hr>
+ <!-- example twenty -->
+  <h2 class="text-dark">Ex-20:The underscore is treated as a letter in JavaScript names. </h2>
+  <button class="btn btn-dark" onclick="underScore()">Result</button>
+  <h3 id="u_S">Here the result</h3>
+
+  <hr>
+  <!-- example twenty one -->
+   <h2 class="text-dark">Ex-21:Redeclaring a Variable Using var</h2>
+   <button class="btn btn-dark" onclick="redeClaring()">Result</button>
+   <h3 id="r_C">Here the result</h3>
+
+   <hr>
+   <!-- example twenty two -->
+    <h2 class="text-dark">Ex-22:Redeclaring a Variable Using Let</h2>
+    <button class="btn btn-dark" onclick="redeClaringL()">Result</button>
+    <h3 id="r_L">Here the result</h3>
+
+    <hr>
+    <!-- example 23 -->
+     <h2 class="text-dark">Ex-23:With <b>var</b>,We can use a variable before it is declared:</h2>
+     <button class="btn btn-dark" onclick="usVar()">Result</button>
+     <h3 id="u_V">Here the result</h3>
+
+     <hr>
+     <!-- example 24 -->
+      <h2 class="text-dark">Ex-24:Constant variables has block scope:</h2>
+      <button class="btn btn-dark" onclick="blockScope()">Result</button>
+      <h3 id="b_S">Here the result</h3>
+      
+      <hr>
+      <!-- example 25 -->
+       <h2 class="text-dark">Ex-25:A typical arithmetic operation takes two numbers (or expressions) and produces a new number.</h2>
+       <button class="btn btn-dark" onclick="javaArith()">a = 3;
+         x = (100 + 50) * a;</button>
+       <h3 id="j_A">Here the result</h3>
+
+
+       <hr>
+       <!-- example 26 -->
+        <h2 class="text-dark">Ex-26:The + Operator</h2>
+        <button class="btn btn-dark" onclick="positiveO()">15+2</button>
+        <h3 id="p_O">Here the result</h3>
+
+
+        <hr>
+        <!-- example 27 -->
+         <h2 class="text-dark">Ex-27:The - Operator</h2>
+         <button class="btn btn-dark" onclick="negetiveO()">52-2</button>
+         <h3 id="n_O">Here the result</h3>
+
+         <hr>
+         <!-- example 28 -->
+          <h2 class="text-dark">Ex-28:The * Operator</h2>
+          <button class="btn btn-dark" onclick="multiO()">62*2</button>
+          <h3 id="m_O">Here the result</h3>
+
+          <hr>
+          <!-- example 29 -->
+          <h2 class="text-dark">Ex-29:The / Operator</h2>
+          <button class="btn btn-dark" onclick="diviO()">25/5</button>
+          <h3 id="d_O">Here the result</h3>
+
+          <hr>
+          <!-- example 30 -->
+          <h2 class="text-dark">Ex-30:The % Operator</h2>
+          <button class="btn btn-dark" onclick="modO()">7%5</button>
+          <h3 id="mod_O">Here the result</h3>
+
+          <hr>
+          <!-- example 31 -->
+          <h2 class="text-dark">Ex-31:The increment operator (++) increments numbers</h2>
+          <button class="btn btn-dark" onclick="increO()">5++</button>
+          <h3 id="incre_O">Here the result</h3>
+
+          <hr>
+            <!-- example 32 -->
+            <h2 class="text-dark">Ex-32:The decrement operator (--) decrements numbers</h2>
+            <button class="btn btn-dark" onclick="decreO()">5--</button>
+            <h3 id="decre_O">Here the result</h3>
+
+            <hr>
+            <!-- example 33 -->
+            <h2 class="text-dark">Ex-33:The exponentiation operator (**) raises the first operand to the power of the second operand</h2>
+            <button class="btn btn-dark" onclick="expoO()">5**2</button>
+            <h3 id="expo_O">Here the result</h3>
+
+            <hr>
+            <!-- example 34 -->
+            <h2 class="text-dark">Ex-34:Math.pow</h2>
+            <button class="btn btn-dark" onclick="powO()">x=6; Math.pow(x,2)</button>
+            <h3 id="pow_O">Here the result</h3>
+
+          <hr>
+          <!-- example 35 -->
+          <h2 class="text-dark">Ex-35:Operator Precedence(Multiplication has precedence over addition.)</h2>
+          <button class="btn btn-dark" onclick="operPre()">100 + 50 * 3</button>
+          <h3 id="oper_pre">Here the result</h3>
+
+          <hr>
+          <!-- example 36 -->
+           <h2 class="text-dark">Ex-36:Operator Precedence(When many operations has the same precedence, they are computed from left to right.)</h2>
+           <button class="btn btn-dark" onclick="preOne()">100 + 50 - 3</button>
+           <h3 id="pre_One">Here the result</h3>
+
+           <hr>
+           <!-- example 37 -->
+            <h2 class="text-dark">Ex-37:Multiplication has precedence over addition.But parenthesis has precedence over multiplication.</h2>
+            <button class="btn btn-dark" onclick="preTwo()">(100 + 50) * 3</button>
+            <h3 id="pre_two">Here the result</h3>
+
+            <hr>
+          <!-- example 38 -->
+           <h2 class="text-dark">Ex-38:Operator Precedence(When many operations has the same precedence, they are computed from left to right.)</h2>
+           <button class="btn btn-dark" onclick="preThree()">100 / 50 * 3</button>
+           <h3 id="pre_three">Here the result</h3>
+
+           <hr>
+           <!-- example 39 -->
+           <h2 class="text-dark">Ex-39:Simple Assignment</h2>
+           <button class="btn btn-dark" onclick="simplE()">let y = 50
+            let x = 10 + y;</button>
+           <h3 id="sim_ple">Here the result</h3>
+
+           <hr>
+           <!-- example 40 -->
+           <h2 class="text-dark">Ex-40:Subtraction Assignment</h2>
+           <button class="btn btn-dark" onclick="subT()">let x = 10;
+            x -= 5;</button>
+           <h3 id="sub_T">Here the result</h3>
+
+
+           <hr>
+           <!-- example 41 -->
+           <h2 class="text-dark">Ex-41:Multiplication Assignment</h2>
+           <button class="btn btn-dark" onclick="mulT()">let x = 11;
+            x *= 5;</button>
+           <h3 id="mul_T">Here the result</h3>
+
+
+           <hr>
+           <!-- example 42 -->
+           <h2 class="text-dark">Ex-42:Exponentiation Assignment</h2>
+           <button class="btn btn-dark" onclick="exT()">let x = 14;
+            x **= 5;</button>
+           <h3 id="ex_T">Here the result</h3>
+
+
+           <hr>
+           <!-- example 43 -->
+           <h2 class="text-dark">Ex-43:Division Assignment Operator</h2>
+           <button class="btn btn-dark" onclick="diviasT()">let x = 10;
+            x /= 2;</button>
+           <h3 id="divias_T">Here the result</h3>
+
+
+           <hr>
+           <!-- example 44 -->
+           <h2 class="text-dark">Ex-44:Remainder Assignment Operator</h2>
+           <button class="btn btn-dark" onclick="reasT()">let x = 10;
+            x %= 3</button>
+           <h3 id="reas_T">Here the result</h3>
+
+           <hr>
+           <!-- example 45 -->
+           <h2 class="text-dark">Ex-45:Left Shift Assignment Operator</h2>
+           <button class="btn btn-dark" onclick="lsasT()">let x = -100;
+            x <<= 5;</button>
+           <h3 id="lsas_T">Here the result</h3>
+
+
+           <hr>
+           <!-- example 46 -->
+           <h2 class="text-dark">Ex-46:Right Shift Assignment</h2>
+           <button class="btn btn-dark" onclick="rsasT()">let x = -100;
+            x >>= 5;</button>
+           <h3 id="rsas_T">Here the result</h3>
+
+
+           <hr>
+           <!-- example 47 -->
+           <h2 class="text-dark">Ex-47:Unsigned Right Shift Assignment</h2>
+           <button class="btn btn-dark" onclick="ursasT()">let x = -100;
+            x >>>= 5;</button>
+           <h3 id="ursas_T">Here the result</h3>
+
+
+           <hr>
+           <!-- example 48 -->
+           <h2 class="text-dark">Ex-48:Bitwise AND Assignment</h2>
+           <button class="btn btn-dark" onclick="basT()">let x = 100;
+            x &= 5;</button>
+           <h3 id="bas_T">Here the result</h3>
+
+           <hr>
+           <!-- example 49 -->
+           <h2 class="text-dark">Ex-49:Bitwise OR Assignment</h2>
+           <button class="btn btn-dark" onclick="bosT()">let x = 100;
+            x |= 5;</button>
+           <h3 id="bos_T">Here the result</h3>
+
+
+           <hr>
+           <!-- example 50 -->
+           <h2 class="text-dark">Ex-50:Bitwise XOR Assignment</h2>
+           <button class="btn btn-dark" onclick="boxsT()">let x = 100;
+            x ^= 5;</button>
+           <h3 id="boxs_T">Here the result</h3>
+
+
+           <hr>
+           <!-- example 51 -->
+           <h2 class="text-dark">Ex-51:Logical AND Assignment</h2>
+           <button class="btn btn-dark" onclick="laasT()">let x = 100;
+            x &&= 5;</button>
+           <h3 id="lass_T">Here the result</h3>
+
+
+
+
+
+           
+
+
+
+
+
+
+
+
+
+
+
+
+          
+ 
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
